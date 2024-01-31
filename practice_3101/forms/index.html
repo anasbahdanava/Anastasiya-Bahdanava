@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    label {display: block;}
+    label {width: 100px ;}
+    span {color: red;}
+    .line {display: inline-block;
+    
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>Форма заявки на работу в зоопарке</h1>
+
+<h3><em>Пожалуйста, заполните форму. Обязательные поля помечены &#42; </em></h3>   
+
+    <fieldset>
+
+    <legend>Контактная информация</legend>
+    
+            <form action="http://fe.it-academy.by/TestForm.php "method="GET">
+   <label>Имя <span>*</span> <input type="text"name="name"required> </label>
+   <label>Номер телефона<input type="number" value="phone" ^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$></label>
+<label>Email<span >*</span><input type="email"name="email" required></label>
+</fieldset>
+
+    <fieldset>
+
+<legend> Персональная информация</legend>
+ 
+            <label>Возраст <span>*</span><input type="number"range min="18" max="65" required></label>
+<label>Пол <select name="list" size="2" > </label>
+    <option value="man">Мужчина</option>
+    <option value="woman">Жещина</option>
+</select> 
+
+<label>Перечислите личные качества      <textarea name="text" cols="30" rows="10"></textarea></label>
+</fieldset>
+
+<fieldset>
+
+    <legend>Выберите ваших любимых животных</legend>
+    <label class="line">Зебра <input type="checkbox" name="zebra" ></label>
+    <label class="line">Кошак<input type="checkbox"name="cat"></label>
+    <label class="line">Анаконда<input type="checkbox"name="anaconda"></label>
+    <label class="line">Человек<input type="checkbox"name="human"></label>
+    <label class="line">Слон<input type="checkbox"name="elephant"></label>
+    <label class="line">Антилопа<input type="checkbox"name="antelope"></label>
+    <label class="line">Голубь<input type="checkbox"name="pigeon"></label>
+    <label class="line">Краб<input type="checkbox"name="crab"></label>
+
+
+</fieldset>
+
+<fieldset>
+
+    <input type="submit" value="Отправить информацию">
+</fieldset>
+
+
+
+
+
+            </form>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

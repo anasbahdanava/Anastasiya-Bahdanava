@@ -1,0 +1,30 @@
+!
+<div class="container">
+        <table>
+            <caption><strong>Простая форма поиска с вариантами:</strong></caption>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <form action="http://sc.it-academy.by/fe/form.php" method="GET">
+                            <fieldset>
+                                <legend>Строка поиска</legend>
+                                <input type="search" placeholder="weather Minsk" max="10">
+                                <input type="submit" value="Search">
+                            </fieldset>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            <input type="radio" name="on_site" value="1"> On site </label>
+                        <label>
+                            <input type="radio" name="in_google" value="2"> In Google </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><em>Длина запроса не более 10 символов</em></td>
+                </tr>
+            </tbody>
+        </table>
+        

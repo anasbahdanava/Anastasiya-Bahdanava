@@ -16,10 +16,6 @@
         caption {
             margin-bottom: 20px;
         }
-
-        fieldset {
-            border: none;
-        }
     </style>
 </head>
 
@@ -30,8 +26,8 @@
         <li><em> Все эти формы размещены в таблице, шириной 700px, 4 строки х 2 столбца </em></li>
         <li><em>Каждая форма должна иметь правильно заполненные атрибуты name, method и action.</em></li>
         <li><em>Для атрибута action, воспользуйтесь значением <a
-                    href="http://sc.it-academy.by/fe/form.p">http://sc.it-academy.by/fe/form.php</a> - небольшой скрипт
-                показывающий переменные переданные методами post и get.</em></li>
+                    href="http://sc.it-academy.by/fe/form.p">http://sc.it-academy.by/fe/form.php</a> - небольшой
+                скрипт показывающий переменные переданные методами post и get.</em></li>
     </ul>
     <div class="container">
         <table>
@@ -63,15 +59,15 @@
         </table>
 
         <table>
-            <caption><strong>Простая форма поиска с вариантами (другая форма):</strong></caption>
+            <caption><strong>Простая форма поиска с вариантами:</strong></caption>
             <tbody>
                 <tr>
                     <td colspan="2">
                         <form action="http://sc.it-academy.by/fe/form.php" method="GET">
                             <fieldset>
                                 <legend>Строка поиска</legend>
-                                <label for="search"><input type="search" id="search" placeholder="weather Minsk"
-                                        required autofocus><span>&#42;</span></label>
+                                <input type="search" id="search" placeholder="weather Minsk" required>
+                                <span>&#42;</span>
                                 <input type="submit" value="search">
                             </fieldset>
                         </form>
@@ -105,15 +101,18 @@
                                 <div>
                                     <label><input type="password" name="password"><span>*</span> Password</label>
                                 </div>
-                                <div>
-                                    <label><input type="checkbox" name="stayLoggedIn" value="stayLoggedIn"> Оставаться в
-                                        системе</label>
-                                </div>
-                                <div>
-                                    <input type="submit" value="Войти">
-                                </div>
                             </fieldset>
                         </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><input type="checkbox" name="stayLoggedIn" value="stayLoggedIn"> Оставаться в системе</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Войти">
                     </td>
                 </tr>
                 <tr>
@@ -128,29 +127,26 @@
                 <tr>
                     <td colspan="2">
                         <form action="http://sc.it-academy.by/fe/form.php" method="GET">
-                            <fieldset>
-                                <legend>Как вам?</legend>
-                                <div>
-                                    <label><input type="radio" value="bad" name="feedback"> Ничего</label><br>
-                                    <label><input type="radio" value="notbad" name="feedback"> Неплохо </label><br>
-                                    <label><input type="radio" value="good" name="feedback"> Хорошо</label><br>
-                                    <label><input type="radio" value="super" name="feedback"> Супер</label>
-                                    <input type="hidden" name="date_voite" value="2013.12.31">
-                                </div>
-                                <div>
-                                    <input type="submit" value="Отправить">
-                                </div>
-                <tr>
-                    <td colspan="2"><em>Есть скрытое поле
-                            name=date_voite, value="2013.12.31"</em></td>
+                            <legend>Как вам?</legend>
+                            <div>
+                                <label><input type="radio" value="bad" name="feedback"> Ничего</label><br>
+                                <label><input type="radio" value="notbad" name="feedback"> Неплохо </label><br>
+                                <label><input type="radio" value="good" name="feedback"> Хорошо</label><br>
+                                <label><input type="radio" value="super" name="feedback"> Супер</label>
+                            </div>
+                        </form>
+                    </td>
                 </tr>
-                </fieldset>
-                </form>
-                </td>
+
+                <tr>
+                    <td>
+                        <input type="submit" value="Отправить">
+                    </td>
                 </tr>
             </tbody>
         </table>
     </div>
+
 </body>
 
 </html>

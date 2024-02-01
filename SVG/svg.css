@@ -16,7 +16,17 @@ body {
 .text {
     font-size: 24px;
     color:black;
-    fill: black;
+    fill: black;  
+}
+.rect {
+    stroke:green;
+    stroke-width: 10px;
+    fill:none;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    transition: all 5s ease-in-out;
+}
 
-  
+.svg-rect:hover .rect {
+    stroke-dashoffset: 0;
 }

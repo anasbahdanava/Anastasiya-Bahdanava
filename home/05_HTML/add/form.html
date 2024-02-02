@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    
+
 </head>
 
 <body>
@@ -35,17 +35,21 @@
 
                         <fieldset>
                             <legend>Паспортные данные</legend>
-                            <p>Серия-только заглавные две латинские буквы с длиной 2 и максимальным количеством символов 2,количество букв не менее двух,обязательное поле</p>
-                            <p>Номер паспорта-только две цифры длиной 7 и максимальным количеством символов 7, количество цифр не менее 7,обязательное поле</p>
-                            <input class ="passport1" type="text" name="series" pattern="[A-Za-z]{2}" placeholder="AA" required>
-                            <input class ="passport2" type="text" name="number"pattern="[0-9]{7}"  placeholder="1234567"required>                          "
+                            <p>Серия-только заглавные две латинские буквы с длиной 2 и максимальным количеством символов
+                                2,количество букв не менее двух,обязательное поле</p>
+                            <p>Номер паспорта-только две цифры длиной 7 и максимальным количеством символов 7,
+                                количество цифр не менее 7,обязательное поле</p>
+                            <input class="passport1" type="text" name="series" pattern="[A-Za-z]{2}" placeholder="AA"
+                                required>
+                            <input class="passport2" type="text" name="number" pattern="[0-9]{7}" placeholder="1234567"
+                                required>
 
                         </fieldset>
 
                         <fieldset>
                             <legend>Дата рождения</legend>
-                            <input class="year" type="text" pattern="{4}" placeholder="2000" required> <br/>
-                            <select id="month" name="month">  
+                            <input class="year" type="text" pattern="\d{4}" placeholder="2000" required> <br />
+                            <select id="month" name="month">
                                 <option value="January">January</option>
                                 <option value="February">February</option>
                                 <option value="March">March</option>
@@ -58,73 +62,116 @@
                                 <option value="October">October</option>
                                 <option value="November">November</option>
                                 <option value="December">December</option>
-                            </select><br/>
-                            <input type="number" name="date" pattern= "[1-9]|[1-2][0-9]|3[0-1]">
+                            </select><br />
+                            <input type="text" name="date" pattern="[1-9]|[1-2][0-9]|3[0-1]">
                         </fieldset>
-                        <fieldset class="vertical"> 
+                        <fieldset class="vertical">
                             <label for="nationality">Национальность</label>
-                            <select id="nationality" name="nationality"required>  
-                                <option value="Belarus"> Беларусь</option>
+                            <select id="nationality" name="nationality" required>
+                                <option value="Belarus">Беларусь</option>
                                 <option value="France">Франция</option>
                                 <option value="Belgium">Бельгия</option>
                                 <option value="Albania">Албания</option>
-                                <option value="Switzerland">Швейцария</option> <br/>
-                                <textarea name="address" cols="10" rows="5">Адрес</textarea>
-                                                   
+                                <option value="Switzerland">Швейцария</option>
+                            </select><br />
+                            <textarea name="address" cols="10" rows="5">Адрес</textarea>
+
+
                         </fieldset>
 
                         <fieldset>
                             <legend>Интересы</legend>
-    <fieldset class="hobby">
-        <legend>Хобби</legend>
-       <label> <input type="checkbox"name="hobby"> Рыбалка </label>
-       <label> <input type="checkbox"name="hobby"> Астрономия </label>
-       <label> <input type="checkbox"name="hobby" > Дайвинг </label>
-       <label> <input type="checkbox"name="hobby" > Марки </label>
-    </fieldset>
-                        <fieldset>
-                            <legend>Домашние животные (возможность выбора нескольких вариантов)</legend>
-                            <select name="list" id="List" size="6" multiple>
-                                <optgroup label="Попугаи">
-                                    <option value="pet1">Волнистый </option>
-                                    <option value="pet2">Ара </option>
-                                    <option value="pet3">Неразлучник </option>
-                                </optgroup>
-                                <optgroup label="Рыбы" >
-                                    <option value="pet4"> Караси </option>
-                                    <option value="pet5"> Окуни </option>
-                                    <option value="pet6">Осётр </option>
-                                </optgroup>
-                                <optgroup label="Птицы" >
-                                    <option value="pet4"> Стая ворон </option>
-                                    <option value="pet5"> Аист </option>
-                                    <option value="pet6">Археоптерикс </option>
-                                </optgroup>
-                            </select>
-                        </fieldset> </fieldset>
+                            <fieldset class="hobby">
+                                <legend>Хобби</legend>
+                                <label> <input type="checkbox" name="hobby"> Рыбалка </label>
+                                <label> <input type="checkbox" name="hobby"> Астрономия </label>
+                                <label> <input type="checkbox" name="hobby"> Дайвинг </label>
+                                <label> <input type="checkbox" name="hobby"> Марки </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Домашние животные (возможность выбора нескольких вариантов)</legend>
+                                <select name="list" id="List" size="6" multiple>
+                                    <optgroup label="Попугаи">
+                                        <option value="pet1">Волнистый </option>
+                                        <option value="pet2">Ара </option>
+                                        <option value="pet3">Неразлучник </option>
+                                    </optgroup>
+                                    <optgroup label="Рыбы">
+                                        <option value="pet4"> Караси </option>
+                                        <option value="pet5"> Окуни </option>
+                                        <option value="pet6">Осётр </option>
+                                    </optgroup>
+                                    <optgroup label="Птицы">
+                                        <option value="pet4"> Стая ворон </option>
+                                        <option value="pet5"> Аист </option>
+                                        <option value="pet6">Археоптерикс </option>
+                                    </optgroup>
+                                </select>
+                            </fieldset>
+                        </fieldset>
 
                         <fieldset class="login">
                             <legend>Данные для входа и восстановления пароля</legend>
-                            <input type="text"name="login" placeholder="Логин" pattern="[A-Za-z]{5,20}" required > 
-                            <input type="text"name="password"placeholder="Пароль"pattern="[A-Za-z]{10,20}"  autocomplete="off"required>
+                            <input type="text" name="login" placeholder="Логин" pattern="[A-Za-z]{5,20}" required>
+                            <input type="text" name="password" placeholder="Пароль" pattern="[A-Za-z]{10,20}"
+                                autocomplete="off" required>
                         </fieldset>
 
                         <fieldset>Координаты
-                        <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="введите адрес электронной почты">
-                        <input type="url" name="url" pattern="https?://.+" placeholder="введите адрес сайта">
-                    </fieldset>
+                            <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                                placeholder="введите адрес электронной почты">
+                            <input type="url" name="url" pattern="https?://.+" placeholder="введите адрес сайта">
+                        </fieldset>
 
-                    <fieldset>
+                        <fieldset>
 
-                        <legend>Цифры</legend>
-                        <input type="number"name="numberchoice" min="-2.5" max="2.5" step="0.1" value="0">
-                        <input type="range"name="numberrange" min="1" max="10"value="1">
-                    </fieldset>
-                    <fieldset>
+                            <legend>Цифры</legend>
+                            <input type="number" name="numberchoice" min="-2.5" max="2.5" step="0.1" value="0">
+                            <input type="range" name="numberrange" min="1" max="10" value="1">
+                        </fieldset>
+                        <fieldset>
 
-                        <input type="submit"value="отправить">
-                        <input type="reset"value="сбросить">
-                    </fieldset>
+                            <input type="submit" value="отправить">
+                            <input type="reset" value="сбросить">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                    viewBox="0 0 100 100">
+                                    <path fill="#3070b7" stroke="#78a2d2" stroke-miterlimit="10"
+                                        d="M70.011,18.988h-39c-6.6,0-12,5.4-12,12v39c0,6.6,5.4,12,12,12 h39c6.6,0,12-5.4,12-12v-39C82.011,24.388,76.611,18.988,70.011,18.988z">
+                                    </path>
+                                    <path fill="#3a83c1"
+                                        d="M70.011,81.988h-39c-6.6,0-12-5.4-12-12V57.487c4.141-4.02,9.787-6.499,16.014-6.499h31 c6.213,0,11.847,2.468,15.986,6.472v12.528C82.011,76.588,76.611,81.988,70.011,81.988z">
+                                    </path>
+                                    <path fill="#40a6dd"
+                                        d="M70.011,81.988h-39c-6.6,0-12-5.4-12-12v-4.501c4.141-4.02,9.787-6.499,16.014-6.499h31 c6.213,0,11.847,2.468,15.986,6.472v4.528C82.011,76.588,76.611,81.988,70.011,81.988z">
+                                    </path>
+                                    <path fill="#31c4f3"
+                                        d="M70.011,81.988h-39c-5.528,0-10.201-3.794-11.578-8.903c4.099-3.783,9.574-6.096,15.592-6.096h31 c6.006,0,11.472,2.304,15.569,6.074C80.226,78.183,75.548,81.988,70.011,81.988z">
+                                    </path>
+                                    <path fill="#1f212b"
+                                        d="M70.011,82.988h-39c-7.18,0-13-5.82-13-13v-39c0-7.18,5.82-13,13-13h39c7.18,0,13,5.82,13,13v39 C83.011,77.168,77.19,82.988,70.011,82.988z M20.011,30.988v39c0,6.075,4.925,11,11,11h39c6.075,0,11-4.925,11-11v-39 c0-6.075-4.925-11-11-11h-39C24.935,19.988,20.011,24.913,20.011,30.988z">
+                                    </path>
+                                    <path fill="#1f212b"
+                                        d="M67.173,77.988H33.848c-5.985,0-10.837-4.852-10.837-10.837V33.825 c0-5.985,4.852-10.837,10.837-10.837h33.663c0.276,0,0.5,0.224,0.5,0.5s-0.224,0.5-0.5,0.5H33.848 c-5.433,0-9.837,4.404-9.837,9.837V67.15c0,5.433,4.405,9.838,9.838,9.838h33.325c5.433,0,9.837-4.404,9.837-9.837V48.488 c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5V67.15C78.011,73.136,73.158,77.988,67.173,77.988z M77.511,45.567 c-0.276,0-0.5-0.224-0.5-0.5v-4c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v4C78.011,45.344,77.787,45.567,77.511,45.567z M77.511,39.567c-0.276,0-0.5-0.224-0.5-0.5v-2c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v2 C78.011,39.344,77.787,39.567,77.511,39.567z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M67.401,65.5H33.599c-2.264,0-4.099-1.835-4.099-4.099V40.599c0-2.264,1.835-4.099,4.099-4.099 h33.802c2.264,0,4.099,1.835,4.099,4.099v20.802C71.5,63.665,69.665,65.5,67.401,65.5z">
+                                    </path>
+                                    <path fill="none" stroke="#1f212b" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-miterlimit="10"
+                                        d="M67.401,65.5H33.599 c-2.264,0-4.099-1.835-4.099-4.099V40.599c0-2.264,1.835-4.099,4.099-4.099h33.802c2.264,0,4.099,1.835,4.099,4.099v20.802 C71.5,63.665,69.665,65.5,67.401,65.5z">
+                                    </path>
+                                    <path fill="none" stroke="#1f212b" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-miterlimit="10"
+                                        d="M31.072,37.372 l13.821,16.454c2.95,3.512,8.335,3.574,11.365,0.131l14.178-16.111">
+                                    </path>
+                                    <line x1="58.689" x2="70.425" y1="51.194" y2="64.167" fill="none" stroke="#1f212b"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></line>
+                                    <line x1="31.072" x2="42.691" y1="64.641" y2="51.203" fill="none" stroke="#1f212b"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></line>
+                                </svg>
+                            </div>
+                        </fieldset>
 
                     </div>
 

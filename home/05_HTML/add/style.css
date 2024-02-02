@@ -1,0 +1,50 @@
+h1 {
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.first {
+    margin-bottom: 0px;
+    border-color: lightgrey;
+}
+
+caption {
+    text-align: left;
+    margin-bottom: -5px;
+}
+.passport1 {
+    width: 50px;
+}
+.passport2 {
+    width:100px;
+}
+
+.vertical {
+    display: flex;
+flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+.right {
+    margin-left: 10px;
+}
+
+.vertical {
+    width:fit-content
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+

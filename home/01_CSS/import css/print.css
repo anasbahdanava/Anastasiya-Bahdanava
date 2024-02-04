@@ -1,0 +1,11 @@
+@import url(css.css);
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: #eee;
+}
+
+h1 {
+    text-align: right;
+
+}

@@ -1,0 +1,58 @@
+.sprite {
+    width: 10000px;
+    height: 10000px;
+    background-color:white;
+    position: relative; 
+    overflow: hidden;
+}
+
+.sprite1, .sprite2, .sprite3, .sprite4, .sprite5 {
+    position: absolute;
+}
+
+.sprite1 {
+    top: 0; 
+    left: 0;
+    height: 187px;
+    width: 139px;
+    background-image: url(cards.png);
+}
+
+.sprite2 {
+    top: 2px;
+    left: 30px;
+    height: 187px;
+    width: 139px;
+    background-image: url(cards.png);
+    background-position: 138px -1393px ;
+}
+
+.sprite3 {
+    top: -2px;
+    left: 91px;
+    height: 189px;
+    width: 139px;
+    background-image: url(cards.png);
+    background-position: 0 -1790px;
+}
+
+
+.sprite4 {
+    top: 0px;
+    left: 150px;
+    height: 189px;
+    width: 139px;
+    background-image: url(cards.png);
+    background-position: 0px 389px;
+}
+
+.sprite5 {
+    top: -1px;
+    left: 200px;
+    height: 188px;
+    width: 139px;
+    background-image: url(cards.png);
+}
+
+
+

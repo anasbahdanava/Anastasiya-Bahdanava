@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 10500px;
+        }
+
+        .header, .footer {
+            height: 100px;
+            background-color: blue;
+        }
+
+        .menu {
+            background-color: red;
+            height: 100px;
+            float: left;
+        }
+
+        .banner {
+            background-color: green;
+            float: right;
+            height: 100px;
+        }
+
+        .content-wrap {
+            background-color: yellow;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">header</div>
+    <div class="content-wrap">
+        <div class="menu">menu</div>
+        <div class="banner"></div>
+        <div class="content">content</div>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>

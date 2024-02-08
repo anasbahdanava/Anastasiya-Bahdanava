@@ -1,0 +1,24 @@
+.sprite2 {
+    width: 500px;
+    height: 500px;
+   background-color: aqua;
+}
+
+.sprite {
+    height:135px;
+    width: 82px;
+    background-image: url(spritemario.png);
+    float: left;
+}
+
+.sprite3 {
+    height: 120px;
+    width:72px;
+    background-image: url(spritemario.png);
+}
+
+.sprite4 {
+    height:244px;
+    width:89px;
+    background-image: url(spritemario.png);
+}

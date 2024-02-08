@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>sprite</h1>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprites Example</title>
+    <style>
+        .sprite-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sprite-item {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-image: url('your-sprite-image.jpg');
+            background-size: 300px 200px; /* Replace with the actual size of your sprite */
+        }
+
+        .sprite-item:nth-child(1) {
+            background-position: 0 0;
+        }
+
+        .sprite-item:nth-child(2) {
+            background-position: -100px 0;
+        }
+
+        .sprite-item:nth-child(3) {
+            background-position: -200px 0;
+        }
+
+        /* Add more styles for other sprite items as needed */
+    </style>
+</head>
+<body>
+    <div class="sprite-container">
+        <div class="sprite-item"></div>
+        <div class="sprite-item"></div>
+        <div class="sprite-item"></div>
+        <!-- Add more sprite items as needed -->
+    </div>
+</body>
+</html>
+
+</body>
+</html>

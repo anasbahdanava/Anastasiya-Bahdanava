@@ -1,0 +1,19 @@
+.italic {
+    font-style: italic; 
+}
+
+.address {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.container {
+ display: flex;
+flex-direction: column;}

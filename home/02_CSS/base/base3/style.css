@@ -1,0 +1,28 @@
+.navigation {
+    background-color: rgba(163, 163, 163, 1);
+    width: 15em;
+    float: left;
+    padding: 10px; 
+    height: 432px;
+}
+
+.article1, .article2 {
+    background-color: hsl(0, 0%, 67%);
+    padding: 71px; 
+    width:100%;
+    margin-bottom: 2em;
+}
+
+.envelope {
+    float: right;
+    margin-right: 43px;
+    margin-top: -55px;
+}
+
+.bottomunit {
+    background-color: rgba(107, 107, 107, 0.97);
+    height: auto; 
+    padding: 10px; 
+    clear: both;
+    width:100%;
+}

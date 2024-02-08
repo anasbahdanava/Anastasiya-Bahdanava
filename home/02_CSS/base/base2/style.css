@@ -1,0 +1,19 @@
+.container {
+    background-color: black;
+    color: green;
+    width:400px;
+    max-height: 64em;
+    overflow: auto;
+    line-height: 16px;
+}
+
+
+.list {
+    width:350px;
+    list-style-type: upper-roman;
+}
+
+.list2 {
+    list-style-type: lower-roman;
+
+}

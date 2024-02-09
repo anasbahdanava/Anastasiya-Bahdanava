@@ -1,19 +1,32 @@
-.italic {
-    font-style: italic; 
+body { 
+    margin: 0;
 }
-
+.italic {
+   font-style: italic;
+}
 .address {
     position: fixed;
     right: 0;
     top: 0;
-    margin: 0;
+    margin-right: 5px;
     text-align: right;
+    float:right;
 }
-
 .bold {
     font-weight: bold;
 }
-
 .container {
  display: flex;
-flex-direction: column;}
+flex-direction: column;
+position: relative;
+}
+.main {
+position: absolute;
+margin-top: 280px;
+margin-left: 40px;
+float: left;
+font-style: italic;
+}
+.signature {
+   font-style: normal;
+}

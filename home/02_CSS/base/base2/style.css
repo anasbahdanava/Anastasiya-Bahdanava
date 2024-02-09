@@ -5,6 +5,7 @@
     max-height: 64em;
     overflow: auto;
     line-height: 16px;
+    overflow-y: scroll;    
 }
 
 

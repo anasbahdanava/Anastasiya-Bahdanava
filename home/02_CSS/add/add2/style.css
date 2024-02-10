@@ -1,28 +1,41 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .navigation {
     background-color: rgba(163, 163, 163, 1);
     width: 15em;
-    float: left;
-    padding: 10px; 
+    padding: 10px;
     height: 432px;
 }
 
-.article1, .article2 {
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: calc(100%-15em);
+}
+
+.article1,
+.article2 {
     background-color: hsl(0, 0%, 67%);
-    padding: 71px; 
-    width:100%;
-    margin-bottom: 2em;
+    padding: 71px;
+    width: 100%;
+    flex-grow: 1;
 }
 
 .envelope {
-    float: right;
-    margin-right: 43px;
-    margin-top: -55px;
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
 }
+
 
 .bottomunit {
     background-color: rgba(107, 107, 107, 0.97);
-    height: auto; 
-    padding: 10px; 
-    clear: both;
-    width:100%;
+    padding: 10px;
+    width: 100%;
+    height: auto;
 }

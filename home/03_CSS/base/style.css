@@ -1,0 +1,28 @@
+.navigation ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .navigation li {
+    margin-right: 30px;
+  }
+
+  .main li {
+    border: 1px solid ;
+    border-radius: 25px;
+    padding: 6px;
+    background-color: rgba(148, 148, 148, 0.26);;
+  }
+  .dropdown  {
+    display: none;
+    z-index: 1 ;
+    visibility: hidden;
+    position: fixed;
+  }
+  
+  .main:hover .dropdown {
+    display: block;
+  }
+  .navigation li:hover .dropdown {
+    visibility: visible;
+}

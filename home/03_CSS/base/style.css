@@ -26,3 +26,8 @@
   .navigation li:hover .dropdown {
     visibility: visible;
 }
+@media (max-width: 430px) {
+    .navigation ul {
+        flex-direction: column;
+    }
+}

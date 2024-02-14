@@ -1,0 +1,77 @@
+.container {
+    width: 100%;
+}
+.header {
+    background-color:#CFE2F3;
+    height: 70px;
+    border: 1px solid;
+
+}
+
+.field1 {
+    background-color: #93C47D;
+    float: left;
+    width: 260px;
+    height: 160px;
+    border: 1px solid;
+
+}
+.field3 {
+    background-color:#93C47D;
+    float: right;
+    width: 260px;
+    height: 160px;
+    margin-top: -161px;
+    border: 1px solid;
+
+}
+.field2 {
+    background-color: #8E7CC3;
+    width: 405px;
+    height: 160px;
+    margin-left: 260px;
+    margin-top: 0px;
+    border: 1px solid;
+
+}
+
+.empty {
+    clear: both;
+    overflow: hidden;
+}
+
+.footer {
+    background-color: #CFE2F3;
+    border: 1px solid;
+
+}
+.first, .second, .third ,.fourth  {
+    background-color: #FFE599;
+    width: 173px;
+    height: 25px;
+    padding-left: 60px;
+    margin: 10px;
+    border: 1px solid;
+
+}
+
+.middle {
+    width: 300px;
+    height: 73px;
+    background-color: #CFE2F3;
+    margin-top: 21px;
+    margin-left: 45px;
+    border: 1px solid;
+
+
+}
+.right {
+    width: 157px;
+    height: 130px;
+    background-color: #CFE2F3;
+    margin-left: 55px;
+    margin-top: 11px;
+    border: 1px solid;
+
+    
+}

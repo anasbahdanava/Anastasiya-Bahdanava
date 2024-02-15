@@ -1,16 +1,15 @@
 .container {
     background-color: black;
     color: green;
-    width:400px;
-    max-height: 64em;
+    width: 400px;
+    max-height: 60px;
     overflow: auto;
     line-height: 16px;
-    overflow-y: scroll;    
+    overflow-y: scroll;
 }
 
-
 .list {
-    width:350px;
+    width: 350px;
     list-style-type: upper-roman;
 }
 

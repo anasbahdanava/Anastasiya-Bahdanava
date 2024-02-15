@@ -2,12 +2,12 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    max-width: 800px;
 }
 
 .navigation {
     background-color: rgba(163, 163, 163, 1);
     width: 15em;
-    padding: 10px;
     height: 432px;
 }
 
@@ -21,7 +21,6 @@
 .article1,
 .article2 {
     background-color: hsl(0, 0%, 67%);
-    padding: 71px;
     width: 100%;
     flex-grow: 1;
 }
@@ -35,7 +34,6 @@
 
 .bottomunit {
     background-color: rgba(107, 107, 107, 0.97);
-    padding: 10px;
     width: 100%;
     height: auto;
 }

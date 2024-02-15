@@ -3,9 +3,7 @@ div {
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.5);
     margin-bottom: 5px;
-
 }
-
 .block,
 .block > div {
     border: none;
@@ -18,5 +16,4 @@ div {
 a:hover + img.hover{
  display: inline-block;
  visibility: visible;
-
 }

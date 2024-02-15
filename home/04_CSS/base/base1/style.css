@@ -5,10 +5,17 @@ div {
     margin-bottom: 5px;
 
 }
-.block {
+
+.block,
+.block > div {
     border: none;
 }
-.block > img,
-.block > a   {
-    display: block;
+
+.hover {
+    display: none; /* Initially hide all images with the .hover class */
+}
+
+.block > div > a:hover + img.hover{
+  display: block;
+
 }

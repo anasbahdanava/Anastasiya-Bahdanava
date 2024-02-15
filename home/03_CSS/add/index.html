@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Smooth Submenu Transition</title>
-<style>
-    .submenu { 
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 1s ease, visibility 1s ease;
-        position: absolute;
-        background-color: #da9bd9; 
-        list-style: none;
-    }
-    
-    .menu li {
-        background-color: #b975c7;
-        padding: 10px;
-        position: relative;
-        list-style: none;
-    }
-    
-    .submenu li {
-        padding: 10px;
-    }
-    
-    .submenu li:hover {
-        background-color: #a49797; 
-    }
-    
-    .menu li:hover .submenu {
-        opacity: 1;
-        visibility: visible;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Submenu Transition</title>
+    <style>
+        .submenu {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 1s ease, visibility 1s ease;
+            position: absolute;
+            background-color: #da9bd9;
+            list-style: none;
+        }
+
+        .menu li {
+            background-color: #b975c7;
+            padding: 10px;
+            position: relative;
+            list-style: none;
+        }
+
+        .submenu li {
+            padding: 10px;
+        }
+
+        .submenu li:hover {
+            background-color: #a49797;
+        }
+
+        .menu li:hover .submenu {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
 </head>
+
 <body>
 
-<ul class="menu">
-    <li>Главное меню
-        <ul class="submenu">
-            <li>Пункт 1</li>
-            <li>Пункт 2</li>
-            <li>Пункт 3</li>
-        </ul>
-    </li>
-</ul>
+    <ul class="menu">
+        <li>Главное меню
+            <ul class="submenu">
+                <li>Пункт 1</li>
+                <li>Пункт 2</li>
+                <li>Пункт 3</li>
+            </ul>
+        </li>
+    </ul>
 
 </body>
-</
+
+</html>

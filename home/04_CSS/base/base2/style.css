@@ -1,18 +1,25 @@
- table {
-     border-collapse: collapse;
- }
- td {
-     width: 50px;
-     height: 50px;
-     border: 3px solid black;
- }
+table {
+    border-collapse: separate;
+    border-spacing: 7px; 
+    border:none;
+    width: 100%; 
+}
 
- tr:nth-child(2n) td:nth-child(2n+1),
- tr:nth-child(2n+1) td:nth-child(2n) {
-     background-color: black;
- }
+.color th {
+    background-color: grey;
+}
 
- tr:nth-child(2n+1) td:nth-child(2n+1),
- tr:nth-child(2n) td:nth-child(2n) {
-     background-color: white;
- }
+td,
+th {
+    border-style: dotted;
+    border-color: grey;
+    width: calc(100% / 6);
+}
+tr:nth-child(odd){
+    background-color: lightgrey;
+}
+.middle {
+    text-align: center;
+}
+
+    

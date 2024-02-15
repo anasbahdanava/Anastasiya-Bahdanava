@@ -12,10 +12,11 @@ div {
 }
 
 .hover {
-    display: none; /* Initially hide all images with the .hover class */
+    visibility: hidden;
 }
 
-.block > div > a:hover + img.hover{
-  display: block;
+a:hover + img.hover{
+ display: inline-block;
+ visibility: visible;
 
 }

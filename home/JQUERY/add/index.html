@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,25 +12,44 @@
             width: 350px;
             padding: 10px;
         }
+
+        .error {
+            background-color: red;
+        }
+
+        .success {
+            background-color: green;
+        }
     </style>
 </head>
+
 <body>
     <h3> Password validation </h3>
     <div>
         <form action="http://fe.it-academy.by/TestForm.php" method="GET">
-       <legend>  <input type="password" name="password" required> <span>*</span>  Password </legend>
-       <legend> <input type="password" name="repeat"required> <span>*</span>  Repeat password </legend>
-       <input type="submit" name="submit" value="submit">
+            <legend> <input type="password" name="password" class="password-field" required> <span>*</span> Password
+            </legend>
+            <legend> <input type="password" name="repeat" class="password-field" required> <span>*</span> Repeat
+                password </legend>
+            <input type="submit" name="submit" value="submit">
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
             $('form').attr({
                 action: 'http://fe.it-academy.by/TestForm.php',
                 method: 'GET'
             });
+
+            var passwordInputs = $('.password-field');
+            passwordInputs.on('input', function () {
+                var passwordsMatch = (passwordInputs.eq(0).val() === passwordInputs.eq(1).val());
+                passwordInputs.toggleClass('error', !passwordsMatch).toggleClass('success', passwordsMatch);
+            });
         });
     </script>
 </body>
+
 </html>

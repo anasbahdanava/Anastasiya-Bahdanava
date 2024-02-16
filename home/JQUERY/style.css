@@ -1,0 +1,30 @@
+table {
+    border-collapse: separate;
+    border-spacing: 7px;
+    border: none;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.color th {
+    background-color: grey;
+}
+
+td,
+th {
+    border-style: dotted;
+    border-color: grey;
+    width: calc(100% / 6);
+}
+
+tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+.middle {
+    text-align: center;
+}
+
+table tr:hover {
+    background-color: violet;
+}

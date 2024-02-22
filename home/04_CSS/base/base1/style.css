@@ -10,10 +10,9 @@ div {
 }
 
 .hover {
-    visibility: hidden;
+    display: none;
 }
 
-a:hover + img.hover{
- display: inline-block;
- visibility: visible;
+a:hover + .hover {
+    display: inline;
 }

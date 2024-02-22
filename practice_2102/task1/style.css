@@ -1,0 +1,43 @@
+.row {
+    height: 1000px;
+}
+.header {
+background-color: #CFE2F3;
+}
+.field1 {
+    background-color: #93C47D;
+    height: 300px;
+}
+.main {
+    background-color:#8E7CC3 ;
+    height: 300px;
+
+}
+.field3 {
+    background-color: #93C47D;
+    height: 300px;
+
+}
+.footer {
+    background-color: #CFE2F3;
+
+}
+div {
+    border: 1px solid black; 
+    padding: 10px; 
+}
+.first {
+    background-color: yellow;
+    height: 10px;
+    margin-bottom: 40px;
+}
+.second {
+    background-color: white;
+    margin:10px;
+    height: 50px;
+}
+.third {
+    background-color: blue;
+    height: 200px;
+}
+

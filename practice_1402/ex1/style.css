@@ -1,6 +1,4 @@
-.container {
-    width: 100%;
-}
+
 .header {
     background-color:#CFE2F3;
     height: 70px;
@@ -27,7 +25,6 @@
 }
 .field2 {
     background-color: #8E7CC3;
-    width: 405px;
     height: 160px;
     margin-left: 260px;
     margin-top: 0px;
@@ -72,6 +69,14 @@
     margin-left: 55px;
     margin-top: 11px;
     border: 1px solid;
-
     
+}
+@media all and (max-width: 900px) {
+    .field1, .field2, .field3 {
+        display: block;
+        width: 100%;
+        float: none;
+        margin: 10px 0;
+    }
+   
 }

@@ -108,15 +108,3 @@ elif year % 400 == 0:
 else:
     print("Year is not leap")
 
-my_string = "Hello, world"
-
-my_string = """  long text
-
-"""
-
-first_name = "Alice"
-last_name = "Smith"
-full_name = first_name + " " + last_name
-
-
-
